@@ -15,11 +15,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="País"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="Id"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/textTitle"
@@ -38,7 +37,7 @@
     <TextView
         android:id="@+id/labelSigla"
         android:layout_width="wrap_content"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="80dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="80dp"
@@ -47,7 +46,6 @@
         android:text="Sigla:"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelCapital" />
 
@@ -63,7 +61,6 @@
         android:text="Capital:"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelNombreInt" />
 
@@ -79,7 +76,6 @@
         android:text="Nombre Int:"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelNombre5" />
 
@@ -125,7 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:text="Nombre"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/labelNombre5"
@@ -139,11 +135,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="80dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="20dp"
         android:text=" Nombre:"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 </android.support.constraint.ConstraintLayout>
