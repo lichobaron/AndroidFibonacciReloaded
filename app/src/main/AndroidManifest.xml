@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.edu.javeriana.com.fibonacci">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +21,8 @@
         <activity android:name=".FibonacciActivity" />
         <activity android:name=".FactorialActivity" />
         <activity android:name=".ListPaisesActivity" />
-        <activity android:name=".PaisActivity"></activity>
+        <activity android:name=".PaisActivity" />
+        <activity android:name=".biografiaFibo"></activity>
     </application>
 
 </manifest>
