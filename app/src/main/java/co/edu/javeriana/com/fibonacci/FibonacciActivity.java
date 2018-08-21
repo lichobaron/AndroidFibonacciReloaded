@@ -1,6 +1,7 @@
 package co.edu.javeriana.com.fibonacci;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ public class FibonacciActivity extends AppCompatActivity {
 
     Button bioFibo;
     LinearLayout listFibo;
-    Vector<Integer> fibo;
+    Vector<Long> fibo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,29 +36,32 @@ public class FibonacciActivity extends AppCompatActivity {
         });
 
         listFibo = findViewById(R.id.listFibo);
-        fibo = new Vector<Integer>();
+        fibo = new Vector<Long>();
 
-        fibo.add(0);
-        fibo.add(1);
+        fibo.add((long) 0);
+        fibo.add((long) 1);
         for (int k = 0; k < n1; k++)
         {
             if (k == 0){
                 TextView x = new TextView(this);
-                x.setText(Integer.toString(0));
+                x.setText(Long.toString(0));
                 x.setTextSize(20);
+                x.setTextColor(Color.parseColor("black"));
                 listFibo.addView(x);
             }
             if (k==1){
                 TextView y = new TextView(this);
-                y.setText(Integer.toString(1));
+                y.setText(Long.toString(1));
                 y.setTextSize(20);
+                y.setTextColor(Color.parseColor("black"));
                 listFibo.addView(y);
             }
             if (k>1) {
                 TextView n = new TextView(this);
                 fibo.add(fibo.elementAt(fibo.size() - 1) + fibo.elementAt(fibo.size() - 2));
-                n.setText(Integer.toString(fibo.elementAt(fibo.size() - 1)));
+                n.setText(Long.toString(fibo.elementAt(fibo.size() - 1)));
                 n.setTextSize(20);
+                n.setTextColor(Color.parseColor("black"));
                 listFibo.addView(n);
             }
         }

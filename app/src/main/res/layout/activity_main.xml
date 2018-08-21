@@ -61,6 +61,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="Fibonacci Reloaded"
+        android:textColor="@android:color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
